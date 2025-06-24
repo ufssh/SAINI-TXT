@@ -1,11 +1,11 @@
+# Exported from Render on 2025-06-24T01:36:07Z
 services:
-  - name: saini-txt
-    type: web
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
-    plan: free
-    envVars:
+- type: web
+  name: annu
+  runtime: python
+  repo: https://github.com/ufssh/SAINI-TXT.git
+  plan: free
+  envVars:
       - key: BOT_TOKEN
         sync: false
       - key: API_ID
@@ -20,3 +20,8 @@ services:
         #sync: false
       - key: PORT
         value: 8080  # Default port value, update if needed
+  region: singapor
+  buildCommand: pip install -r requirements.txt
+  startCommand: python main.py
+  autoDeployTrigger: commit
+version: "1"

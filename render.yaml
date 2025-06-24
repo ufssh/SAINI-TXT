@@ -6,18 +6,6 @@ services:
   repo: https://github.com/ufssh/SAINI-TXT.git
   plan: free
   envVars:
-      - key: BOT_TOKEN
-        sync: false
-      - key: API_ID
-        value: 27765349
-      - key: API_HASH
-        value: 9df1f705c8047ac0d723b29069a1332b
-      - key: OWNER
-        value: 6935026876
-      - key: CREDIT
-        value: ~ Jack \\
-      #- key: WEBHOOK
-        #sync: false
       - key: PORT
         value: 8080  # Default port value, update if needed
   #region: singapor

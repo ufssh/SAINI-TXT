@@ -4,21 +4,21 @@ services:
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/nikhilsainiop/Saini-txt-direct
+    repo: https://github.com/ufssh/SAINI-TXT
     branch: main
-    autoDeploy: false
+    autoDeploy: True
     envVars:
       - key: BOT_TOKEN
         sync: false
       - key: API_ID
-        sync: false
+        value: 27765349
       - key: API_HASH
-        sync: false
+        value: 9df1f705c8047ac0d723b29069a1332b
       - key: OWNER
-        sync: false
+        value: 6935026876
       - key: CREDIT
-        sync: false
+        value: ~ Jack \\
       #- key: WEBHOOK
         #sync: false
       - key: PORT
-        value: 8000  # Default port value, update if needed
+        value: 8080  # Default port value, update if needed

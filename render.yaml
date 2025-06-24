@@ -1,12 +1,10 @@
 services:
-  - type: web
-    name: saini-txt-direct
+  - name: saini-txt
+    type: web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
     plan: free
-    env: docker
-    dockerfilePath: Dockerfile
-    repo: https://github.com/ufssh/SAINI-TXT
-    branch: main
-    autoDeploy: True
     envVars:
       - key: BOT_TOKEN
         sync: false

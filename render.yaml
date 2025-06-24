@@ -20,7 +20,7 @@ services:
         #sync: false
       - key: PORT
         value: 8080  # Default port value, update if needed
-  region: singapor
+  #region: singapor
   buildCommand: pip install -r requirements.txt
   startCommand: python main.py
   autoDeployTrigger: commit
